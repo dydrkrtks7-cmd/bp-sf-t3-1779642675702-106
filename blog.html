@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 셔츠룸 블로그 – 힙플레이스의 거친 진실</title>
+    <meta name="description" content="마포 셔츠룸 블로그: 규격화된 카페는 가라. 진짜 힙은 여기 있다. 010-6279-0862로 전화 걸어.">
+    <meta name="keywords" content="마포 셔츠룸, 마포 셔츠룸 블로그, 마포 힙플레이스, 마포 카페, 마포 셔츠룸 전화번호">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-106.pages.dev/blog">
+    <meta property="og:title" content="마포 셔츠룸 – 블로그: 거침없는 청춘의 목소리">
+    <meta property="og:description" content="마포 셔츠룸 블로그. 규격화된 카페에 엿 먹어라. 진짜 힙은 여기서 시작된다. 010-6279-0862">
+    <meta property="og:url" content="https://sf-t3-1779642675702-106.pages.dev/blog">
+    <style>
+        :root {
+            --brutal-black: #0a0a0a;
+            --brutal-yellow: #fcee0a;
+            --brutal-yellow-dark: #d4c809;
+            --brutal-white: #f5f5f5;
+            --brutal-gray: #333;
+            --font-mono: 'Courier New', monospace;
+            --font-sans: 'Impact', 'Arial Black', sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: var(--brutal-black);
+            color: var(--brutal-white);
+            font-family: var(--font-mono);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            color: var(--brutal-yellow);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: var(--brutal-white);
+        }
+        /* 네비게이션 */
+        nav {
+            background: var(--brutal-black);
+            border-bottom: 3px solid var(--brutal-yellow);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 100;
+        }
+        .logo {
+            font-family: var(--font-sans);
+            font-size: 1.8rem;
+            letter-spacing: -1px;
+            color: var(--brutal-yellow);
+            text-transform: uppercase;
+        }
+        .logo span {
+            color: var(--brutal-white);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links li a {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-links li a.active {
+            border-bottom-color: var(--brutal-yellow);
+            color: var(--brutal-yellow);
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: var(--brutal-yellow);
+            transition: all 0.3s;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--brutal-black);
+                border-bottom: 3px solid var(--brutal-yellow);
+                padding: 1rem 2rem;
+                gap: 1rem;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .logo {
+                font-size: 1.4rem;
+            }
+        }
+        /* 메인 콘텐츠 */
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .blog-post {
+            background: #111;
+            border: 2px solid var(--brutal-yellow);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .blog-post h1 {
+            font-family: var(--font-sans);
+            font-size: 2.5rem;
+            color: var(--brutal-yellow);
+            text-transform: uppercase;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+        }
+        .post-meta {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px dashed var(--brutal-gray);
+            padding-bottom: 1rem;
+        }
+        .post-content p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        .post-content blockquote {
+            border-left: 4px solid var(--brutal-yellow);
+            padding: 0.8rem 1.5rem;
+            margin: 1.5rem 0;
+            background: #1a1a1a;
+            font-style: italic;
+            color: #ccc;
+        }
+        .post-content blockquote strong {
+            color: var(--brutal-yellow);
+        }
+        .cta-block {
+            background: var(--brutal-yellow);
+            color: var(--brutal-black);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+            font-family: var(--font-sans);
+            font-size: 1.3rem;
+            text-transform: uppercase;
+        }
+        .cta-block a {
+            color: var(--brutal-black);
+            border-bottom: 2px solid var(--brutal-black);
+        }
+        .cta-block a:hover {
+            color: var(--brutal-gray);
+        }
+        /* 푸터 */
+        footer {
+            border-top: 3px solid var(--brutal-yellow);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        footer a {
+            color: var(--brutal-yellow);
+        }
+        footer .phone {
+            font-family: var(--font-sans);
+            font-size: 1.2rem;
+            color: var(--brutal-yellow);
+            display: block;
+            margin-top: 0.5rem;
+        }
+        /* 햄버거 메뉴 토글 스크립트 */
+        /* 인라인으로 간단히 처리 (순수 HTML 요청이므로 스크립트는 최소화) */
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">마포<span>셔츠룸</span></div>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="https://sf-t3-1779642675702-106.pages.dev">홈</a></li>
+            <li><a href="https://sf-t3-1779642675702-106.pages.dev/about">소개</a></li>
+            <li><a href="https://sf-t3-1779642675702-106.pages.dev/menu">메뉴</a></li>
+            <li><a href="https://sf-t3-1779642675702-106.pages.dev/blog" class="active">블로그</a></li>
+            <li><a href="tel:01062790862">전화</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="blog-post">
+            <h1>규격화된 카페는 가라. 진짜 힙은 거리에서 나온다.</h1>
+            <div class="post-meta">
+                <time datetime="2025-03-11">2025.03.11</time> · 작성자: 마포 셔츠룸 크루 · 카테고리: 힙플레이스 문화
+            </div>
+            <div class="post-content">
+                <p>
+                    씨발, 또 스타벅스야? 저 damn 통일된 인테리어, 똑같은 라떼 맛, 거기 앉아서 인스타에 ‘힙함’ 인증하는 너새끼들 봐라. 진짜 힙은 그런 데서 나오는 게 아냐. 힙은 거친 콘크리트 벽, 삐뚤어진 간판, 그리고 주인장이 직접 내리는 막걸리 같은 커피에서 나오는 거야.
+                </p>
+                <p>
+                    <strong>마포 셔츠룸</strong>은 그래서 존재한다. 이곳은 너네가 생각하는 ‘감성 카페’랑은 차원이 달라. 의자는 덜렁거리고, 벽에는 낙서가 즐비하고, 음악은 쿵쿵 머리를 때린다. 여기서는 플라스틱 같은 미소 대신, “어이, 커피 나갔다”라는 거친 목소리가 기다린다.
+                </p>
+                <blockquote>
+                    “나는 카페가 아니라 <strong>놀이터</strong>를 만들었다. 규칙에 찌든 새끼들은 들어오지 마라. 여기는 너네 아빠 카페가 아니다.” — 마포 셔츠룸 오너의 일침
+                </blockquote>
+                <p>
+                    메뉴판을 봐라. ‘히든 셔츠 블렌드’는 우리만의 레시피로, 산미 쩌는 원두에 마른 고춧가루 한 스푼 넣은 거다. 맞다, 고춧가루. 이게 뭐야? 싶지? 그게 바로 셔츠룸의 정신이야. 너의 고정관념을 깨는 맛. 그리고 가격은 입장료 5천 원 추가. 왜? 여기서 경험하는 ‘분위기’에 대해 돈을 내야 하니까. 
+                </p>
+                <p>
+                    최근 ‘힙플레이스’라는 말이 유행하면서, 온 동네에 비슷비슷한 카페가 생겨났다. 전구 달린 철제 선반, 모노톤 인테리어, 그리고 ‘뜨는’ 커피. 그딴 건 진짜가 아니야. 진짜 힙은 지금 이 순간, 우리 동네 공터에 임시로 지은 이 컨테이너 박스 안에 있어. 바퀴벌레 한 마리 기어다니는 이 공간이 바로 힙플레이스의 본질이야 — <strong>완벽함에 대한 반항</strong>.
+                </p>
+                <p>
+                    우리 블로그 첫 글은 당당히 선언한다: 마포 셔츠룸은 카페가 아니라 <em>커뮤니티</em>다. 여기 오는 새끼들은 커피 마시러 오는 게 아니라, 자기만의 거침없는 이야기를 하러 온다. 오늘 밤, 너도 여기 와서 맥주 한 캔 까고,
+</body>
+</html>
