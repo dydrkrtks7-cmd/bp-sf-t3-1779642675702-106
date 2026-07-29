@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://dydrkrtks7-cmd.github.io/bp-sf-t3-1779642675702-106//sitemap.xml
+
+Sitemap: https://zone-coin-karaoke-note.best-samseong-hotplace.xyz/sitemap.xml
