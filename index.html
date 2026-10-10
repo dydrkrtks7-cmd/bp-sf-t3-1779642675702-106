@@ -391,6 +391,7 @@
  }
  </style>
  
+<style data-site-ui-repair="20261010">main section[id]{scroll-margin-top:176px;}#hamburger:focus-visible{outline:2px solid var(--raw-accent);outline-offset:5px;}</style>
 </head>
 <body>
  <header class="v-wrap-5yb5">
@@ -403,11 +404,11 @@
  <a href="#conditions">적합성</a>
  <a href="#faq">FAQ</a>
  </nav>
- <div class="q-nav-l4sm" id="hamburger">
+ <button type="button" class="q-nav-l4sm" id="hamburger" aria-label="메뉴 열기·닫기" aria-controls="main-nav" style="padding:0;border:0;background:transparent;color:inherit;">
  <span></span>
  <span></span>
  <span></span>
- </div>
+ </button>
  </div>
  </header>
 
@@ -538,5 +539,6 @@
  }
  });
  </script>
+<script data-site-menu-close="v1">document.getElementById("main-nav").addEventListener("click",function(event){if(event.target instanceof Element&&event.target.closest("a[href]"))this.classList.remove("active");});</script>
 </body>
 </html>
